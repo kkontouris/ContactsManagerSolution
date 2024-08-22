@@ -1,0 +1,12 @@
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.deps.json
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.dll
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.pdb
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.csproj.AssemblyReference.cache
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.AssemblyInfoInputs.cache
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.AssemblyInfo.cs
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.csproj.CoreCompileInputs.cache
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.dll
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net6.0\refint\ContactsManager.Core.dll
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.pdb
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net6.0\ref\ContactsManager.Core.dll

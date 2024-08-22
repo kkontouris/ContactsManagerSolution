@@ -1,0 +1,15 @@
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Infrastructure\bin\Debug\net6.0\ContactsManager.Infrastructure.deps.json
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Infrastructure\bin\Debug\net6.0\ContactsManager.Infrastructure.dll
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Infrastructure\bin\Debug\net6.0\ContactsManager.Infrastructure.pdb
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Infrastructure\bin\Debug\net6.0\ContactsManager.Core.dll
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Infrastructure\bin\Debug\net6.0\ContactsManager.Core.pdb
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.csproj.AssemblyReference.cache
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.AssemblyInfoInputs.cache
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.AssemblyInfo.cs
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.csproj.CoreCompileInputs.cache
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\Contacts.2BC572B3.Up2Date
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.dll
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\refint\ContactsManager.Infrastructure.dll
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.pdb
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ref\ContactsManager.Infrastructure.dll

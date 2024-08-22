@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\Rotativa\\wkhtmltopdf.exe",
+      "PackagePath": "staticwebassets\\Rotativa\\wkhtmltopdf.exe"
+    },
+    {
+      "Id": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\StyleSheet.css",
+      "PackagePath": "staticwebassets\\StyleSheet.css"
+    },
+    {
+      "Id": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\error.svg",
+      "PackagePath": "staticwebassets\\error.svg"
+    },
+    {
+      "Id": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\jquery.min.js",
+      "PackagePath": "staticwebassets\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\logo.png",
+      "PackagePath": "staticwebassets\\logo.png"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ContactsManager.Ui.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ContactsManager.Ui.props",
+      "PackagePath": "build\\ContactsManager.Ui.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ContactsManager.Ui.props",
+      "PackagePath": "buildMultiTargeting\\ContactsManager.Ui.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ContactsManager.Ui.props",
+      "PackagePath": "buildTransitive\\ContactsManager.Ui.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

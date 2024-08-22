@@ -1,0 +1,11 @@
+.vs/
+*.dbmdl
+*.bak
+*.log
+*.obj
+*.pch
+*.pdb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates

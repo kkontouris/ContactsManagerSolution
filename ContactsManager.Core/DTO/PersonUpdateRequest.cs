@@ -33,6 +33,8 @@ namespace ServiceContracts.Dto
 
 		public string? Address { get; set; }
 
+		public string? TaxIdentificationNumber { get; set; }
+
 		public bool ReceiveNewsLetters { get; set; }
 
 		/// <summary>
@@ -52,7 +54,7 @@ namespace ServiceContracts.Dto
 				countryId: CountryId,
 				address: Address,
 				receiveNewsLeters: ReceiveNewsLetters,
-				taxIdentificationNumber: "123456789"
+				taxIdentificationNumber: TaxIdentificationNumber
 			) ;
 
 

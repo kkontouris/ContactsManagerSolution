@@ -23,7 +23,7 @@ namespace _16CrudExample
 			//});
 
 			builder.Services.AddControllersWithViews();
-
+			builder.Services.AddHealthChecks();
 			builder.Services.ConfigureServices(builder.Configuration);
 			var app = builder.Build();
 
@@ -47,6 +47,7 @@ namespace _16CrudExample
 			app.UseHttpsRedirection();
 
 
+			app.UseHealthChecks("/healthcheck");
 			Rotativa.AspNetCore.RotativaConfiguration.Setup("wwwroot", wkhtmltopdfRelativePath: "Rotativa");
 			app.UseStaticFiles();
 

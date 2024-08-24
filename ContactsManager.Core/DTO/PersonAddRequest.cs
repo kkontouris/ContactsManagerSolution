@@ -31,7 +31,11 @@ namespace ServiceContracts.Dto
 
 		public string? Address { get; set; }
 
+		public string? TaxIdentificationNumber { get; set; }
+
 		public bool ReceiveNewsLetters { get; set; }
+
+
 
 		/// <summary>
 		/// Converts the current object of PersonAddRequest into a new
@@ -48,7 +52,7 @@ namespace ServiceContracts.Dto
 				countryId: CountryId,
 				address: Address,
 				receiveNewsLeters: ReceiveNewsLetters,
-				taxIdentificationNumber:" "
+				taxIdentificationNumber:TaxIdentificationNumber
 			);
 
 		}

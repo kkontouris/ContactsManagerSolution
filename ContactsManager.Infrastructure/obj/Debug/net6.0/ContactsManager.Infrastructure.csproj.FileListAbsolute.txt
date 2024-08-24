@@ -13,3 +13,4 @@ D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Inf
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\refint\ContactsManager.Infrastructure.dll
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.pdb
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ref\ContactsManager.Infrastructure.dll
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.sourcelink.json

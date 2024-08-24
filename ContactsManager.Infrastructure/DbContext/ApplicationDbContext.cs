@@ -17,6 +17,7 @@ namespace Entities
 
 		public ApplicationDbContext(DbContextOptions options) : base(options)
 		{
+			this.Database.Migrate();
 		}
 		public virtual DbSet<Country> Countries { get; set; }
 		public virtual DbSet<Person> Persons { get; set; }

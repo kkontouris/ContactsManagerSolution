@@ -15,7 +15,9 @@ namespace ServiceContracts.Dto
 	public class PersonAddRequest
 	{
 		[Required(ErrorMessage ="Person name can not be blanc")]
-        public string? PersonName { get; set; }
+		[StringLength(40, ErrorMessage = "Το όνομα δεν πρέπει να υπερβαίνει τους 40 χαρακτήρες.")]
+		public string? PersonName { get; set; }
+
 		[DataType(DataType.EmailAddress)]
 		[Required(ErrorMessage = "Email can not be blanc")]
 		[EmailAddress(ErrorMessage ="Email address should be in specific format")]
@@ -30,7 +32,7 @@ namespace ServiceContracts.Dto
 		public Guid? CountryId { get; set; }
 
 		public string? Address { get; set; }
-
+		[StringLength(9, MinimumLength = 9, ErrorMessage = "Ο ΑΦΜ πρέπει να έχει ακριβώς 9 χαρακτήρες.")]
 		public string? TaxIdentificationNumber { get; set; }
 
 		public bool ReceiveNewsLetters { get; set; }
@@ -44,15 +46,15 @@ namespace ServiceContracts.Dto
 		/// <returns></returns>
         public Person ToPerson()
 		{
-			return new Person(
-				personName: PersonName,
-				email: Email,
+			return new Person (
+				personName : PersonName,
+				email : Email,
 				dateOfBirth: DateOfBirth,
 				gender: Gender.ToString(),
 				countryId: CountryId,
 				address: Address,
 				receiveNewsLeters: ReceiveNewsLetters,
-				taxIdentificationNumber:TaxIdentificationNumber
+				taxIdentificationNumber: TaxIdentificationNumber
 			);
 
 		}

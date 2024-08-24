@@ -67,12 +67,13 @@ namespace Entities
 				new SqlParameter("@PersonName", person.PersonName),
 				new SqlParameter("@Email", person.Email),
 				new SqlParameter("@DateOfBirth", person.DateOfBirth),
-				new SqlParameter("@Gender", person.CountryId),
+				new SqlParameter("@Gender", person.Gender),
 				new SqlParameter("@Address", person.Address),
-				new SqlParameter("@ReceiveNewsLeters", person.ReceiveNewsLeters)
+				new SqlParameter("@ReceiveNewsLeters", person.ReceiveNewsLeters),
+				new SqlParameter("@TaxIdentificationNumber", person.TaxIdentificationNumber)
 			};
 			return Database.ExecuteSqlRaw("EXECUTE [dbo].[InsertPerson] @PersonId,@PersonName, @Email,@DateOfBirth" +
-				"@Gender,@Address,@ReceiveNewsLeters", parameters);
+				"@Gender,@Address,@ReceiveNewsLeters,@TaxIdentificationNumber",parameters);
 		}
 	}
 }

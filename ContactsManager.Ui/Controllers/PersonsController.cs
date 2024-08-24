@@ -1,6 +1,7 @@
 ﻿using _16CrudExample.Filters.ActionFilters;
 using _16CrudExample.Filters.AuthorizationFilters;
 using _16CrudExample.Filters.ResultFilters;
+using Entities;
 using Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel;
 using Microsoft.AspNetCore.Mvc;
 using Rotativa.AspNetCore;
@@ -94,6 +95,11 @@ namespace _16CrudExample.Controllers
 				ViewBag.errors=ModelState.Values.SelectMany(v=>v.Errors).SelectMany(v=>v.ErrorMessage).ToList();
 				return View();
 			}
+			// Δημιουργία του Person object με validation στον constructor
+			var person = new Person(personAddRequest.PersonName, personAddRequest.Email,
+									personAddRequest.DateOfBirth, personAddRequest.Gender.ToString(),
+									personAddRequest.CountryId, personAddRequest.Address,
+									personAddRequest.ReceiveNewsLetters, personAddRequest.TaxIdentificationNumber);
 			await _personAdderService.AddPerson(personAddRequest);
 			return RedirectToAction("Index","Persons");
 		}

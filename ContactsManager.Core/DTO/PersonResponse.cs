@@ -43,8 +43,8 @@ namespace ServiceContracts.Dto
 				CountryId == personResponse.CountryId &&
 				Address == personResponse.Address &&
 				ReceiveNewsLetters == personResponse.ReceiveNewsLetters &&
-				Gender == personResponse.Gender;
-				TaxIdentificationNumber = personResponse.TaxIdentificationNumber;
+				Gender == personResponse.Gender &&
+				TaxIdentificationNumber == personResponse.TaxIdentificationNumber;
 		}
 
 		public PersonUpdateRequest ToPersonUpdateRequest()

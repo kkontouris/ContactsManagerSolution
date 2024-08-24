@@ -44,7 +44,7 @@ namespace ServiceContracts.Dto
 		/// <returns>Person Object</returns>
 		public Person ToPerson()
 		{
-			return new Person(
+			return new Person (
 
 
 				personName: PersonName,

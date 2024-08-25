@@ -15,9 +15,14 @@ namespace Entities
 	public class ApplicationDbContext :IdentityDbContext<ApplicationUser,ApplicationRole, Guid>
 	{
 
-		public ApplicationDbContext(DbContextOptions options) : base(options)
+		//public ApplicationDbContext(DbContextOptions options) : base(options)
+		//{
+		//	this.Database.Migrate();
+		//}
+
+		// Constructor that accepts DbContextOptions and passes them to the base class
+		public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
 		{
-			this.Database.Migrate();
 		}
 		public virtual DbSet<Country> Countries { get; set; }
 		public virtual DbSet<Person> Persons { get; set; }

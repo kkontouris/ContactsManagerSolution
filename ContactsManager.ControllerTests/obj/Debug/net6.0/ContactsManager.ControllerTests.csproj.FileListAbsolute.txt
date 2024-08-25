@@ -97,3 +97,4 @@ D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Con
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.ControllerTests\obj\Debug\net6.0\ContactsManager.ControllerTests.pdb
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.ControllerTests\obj\Debug\net6.0\ContactsManager.ControllerTests.genruntimeconfig.cache
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.ControllerTests\obj\Debug\net6.0\ref\ContactsManager.ControllerTests.dll
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.ControllerTests\obj\Debug\net6.0\ContactsManager.ControllerTests.sourcelink.json

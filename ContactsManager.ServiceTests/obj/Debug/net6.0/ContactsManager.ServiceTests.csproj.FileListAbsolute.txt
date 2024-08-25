@@ -217,3 +217,4 @@ D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Ser
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.ServiceTests\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.ServiceTests\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.ServiceTests\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.ServiceTests\obj\Debug\net6.0\ContactsManager.ServiceTests.sourcelink.json

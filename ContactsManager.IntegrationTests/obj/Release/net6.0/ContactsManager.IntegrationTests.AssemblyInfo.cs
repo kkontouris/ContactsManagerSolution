@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ContactsManager.IntegrationTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13c8a81f2f7246e537706eff2576f501a451aa0f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01bac93ea5b1a4867acda134af20615afa7d1486")]
 [assembly: System.Reflection.AssemblyProductAttribute("ContactsManager.IntegrationTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ContactsManager.IntegrationTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

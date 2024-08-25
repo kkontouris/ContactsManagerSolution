@@ -97,3 +97,4 @@ D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Int
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.IntegrationTests\obj\Debug\net6.0\ContactsManager.IntegrationTests.pdb
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.IntegrationTests\obj\Debug\net6.0\ContactsManager.IntegrationTests.genruntimeconfig.cache
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.IntegrationTests\obj\Debug\net6.0\ref\ContactsManager.IntegrationTests.dll
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.IntegrationTests\obj\Debug\net6.0\ContactsManager.IntegrationTests.sourcelink.json

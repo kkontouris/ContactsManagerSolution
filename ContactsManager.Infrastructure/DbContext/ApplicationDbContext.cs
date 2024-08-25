@@ -55,6 +55,7 @@ namespace Entities
 				.HasColumnType("varchar(9)")
 				.HasDefaultValue("123456789");
 
+
 			modelBuilder.Entity<Person>().HasCheckConstraint("CHK_TaxIdentificationNumber", "LEN([TaxIdentificationNumber])=9");
 
 

@@ -49,11 +49,11 @@
 				<label class="form-label">Gender</label>
 			</div>
 			<div class="flex-1">
-				<input type="radio" asp-for="Gender" value="Male" />
+				<input type="radio" asp-for="Gender" id="Male" value="Male" />
 				<label for="Male">Male</label>
-				<input type="radio" asp-for="Gender" value="Female" class="ml"/>
+				<input type="radio" asp-for="Gender" id="Female" value="Female" class="ml"/>
 				<label for="Female">Female</label>
-				<input type="radio" asp-for="Gender" value="Other" class="ml"/>
+				<input type="radio" asp-for="Gender" id="Other" value="Other" class="ml" />
 				<label for="Other">Other</label>
 			</div>
 		</div>
@@ -95,6 +95,17 @@
 				<span asp-validation-for="ReceiveNewsLetters" class="text-red"></span>
 			</div>
 
+		</div>
+
+		@*Email*@     @*label for="" and input id="" is the same *@
+		<div class="form-field flex">
+			<div class="w-25">
+				<label asp-for="TaxIdentificationNumber" class="form-label">Tax Identification Number</label>
+			</div>
+			<div class="flex-1">
+				<input asp-for="TaxIdentificationNumber" class="form-input" />
+				<span asp-validation-for="TaxIdentificationNumber" class="text-red"></span>
+			</div>
 		</div>
 
 		@*Submit Button*@

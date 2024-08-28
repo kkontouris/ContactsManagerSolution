@@ -8,6 +8,7 @@ using Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 using Microsoft.Extensions.Logging;
+using Exceptions;
 
 namespace Repositories
 {
@@ -77,25 +78,21 @@ namespace Repositories
 
 			if (matchingPerson == null)
 			{
-				return person;
+				throw new InvalidPersonIdException("Given Person Id does not exist");
 			}
 
-			// Use the update method to change the properties
-			matchingPerson.UpdatePerson(
-				personName: person.PersonName,
-				email: person.Email,
-				dateOfBirth: person.DateOfBirth,
-				gender: person.Gender,
-				address: person.Address,
-				receiveNewsLeters: person.ReceiveNewsLeters,
-				taxIdentificationNumber: person.TaxIdentificationNumber
-			);
+			
+			matchingPerson.PersonName = person.PersonName;
+			matchingPerson.Email = person.Email;
+			matchingPerson.DateOfBirth = person.DateOfBirth;
+			matchingPerson.Gender = person.Gender;
+			matchingPerson.Address = person.Address;
+			matchingPerson.ReceiveNewsLeters = person.ReceiveNewsLeters;
+			matchingPerson.TaxIdentificationNumber = person.TaxIdentificationNumber;
+			
 
 			int countUpdated=await _dB.SaveChangesAsync();
 			return matchingPerson;
-
-
-
 		}
 	}
 }

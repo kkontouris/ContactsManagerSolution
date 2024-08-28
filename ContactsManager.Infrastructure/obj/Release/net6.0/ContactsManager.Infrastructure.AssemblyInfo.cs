@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ContactsManager.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a250a246ec1709e9e4523cce62431e5e1cdcb04")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e74c407760d9f320f7e794f8adf0b809d3b685c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ContactsManager.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ContactsManager.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

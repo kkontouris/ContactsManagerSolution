@@ -11,31 +11,20 @@ namespace Entities
 	public class Person
 	{
 		[Key]
-		public Guid PersonId { get; internal set; }
+		public Guid PersonId { get; set; }
 
-		public string? PersonName { get; internal set; }
-		public string? Email { get; internal set; }
-		public DateTime? DateOfBirth { get; internal set; }
-		public string? Gender { get; internal set; }
-		public Guid? CountryId { get; internal set; }
-		public string? Address { get; internal set; }
-		public bool ReceiveNewsLeters { get; internal set; }
-		public string? TaxIdentificationNumber { get; internal set; }
+		public string? PersonName { get; set; }
+		public string? Email { get; set; }
+		public DateTime? DateOfBirth { get; set; }
+		public string? Gender { get; set; }
+		public Guid? CountryId { get; set; }
+		public string? Address { get;  set; }
+		public bool ReceiveNewsLeters { get; set; }
+		public string? TaxIdentificationNumber { get; set; }
 
 		[ForeignKey("CountryId")]
 		public Country? Country { get; internal set; }
 
-		// Factory method for updating properties
-		public void UpdatePerson(string? personName, string? email, DateTime? dateOfBirth, string? gender, string? address, bool receiveNewsLeters, string? taxIdentificationNumber)
-		{
-			PersonName = personName;
-			Email = email;
-			DateOfBirth = dateOfBirth;
-			Gender = gender;
-			Address = address;
-			ReceiveNewsLeters = receiveNewsLeters;
-			TaxIdentificationNumber = taxIdentificationNumber;
-		}
 
 		// Constructor με validation
 		public Person(string? personName, string? email, DateTime? dateOfBirth, string? gender, Guid? countryId,

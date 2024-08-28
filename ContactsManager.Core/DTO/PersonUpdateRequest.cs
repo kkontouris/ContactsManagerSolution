@@ -28,11 +28,11 @@ namespace ServiceContracts.Dto
 		public DateTime? DateOfBirth { get; set; }
 
 		public GenderOptions? Gender { get; set; }
-
+		[Required(ErrorMessage = "Please select a country")]
 		public Guid? CountryId { get; set; }
 
 		public string? Address { get; set; }
-
+		[StringLength(9, MinimumLength = 9, ErrorMessage = "Ο ΑΦΜ πρέπει να έχει ακριβώς 9 χαρακτήρες.")]
 		public string? TaxIdentificationNumber { get; set; }
 
 		public bool ReceiveNewsLetters { get; set; }

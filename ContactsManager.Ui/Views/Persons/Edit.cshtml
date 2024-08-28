@@ -97,7 +97,7 @@
 
 		</div>
 
-		@*Email*@     @*label for="" and input id="" is the same *@
+		@*TaxIdentificationNumber*@     @*label for="" and input id="" is the same *@
 		<div class="form-field flex">
 			<div class="w-25">
 				<label asp-for="TaxIdentificationNumber" class="form-label">Tax Identification Number</label>
@@ -116,14 +116,14 @@
 				<button class="button-green-back button">Update</button>
 				@if(ViewBag.erros!=null)
 				{
-					foreach(var error in ViewBag.errors)
-					{
-						<div class="text-red ml">
-							<ul>
+					<div class="text-red ml">
+						<ul>
+							@foreach (var error in ViewBag.errors as List<string>)
+							{
 								<li class="ml">@error</li>
-							</ul>
-						</div>
-					}
+							}
+						</ul>
+					</div>
 				}
 			</div>
 

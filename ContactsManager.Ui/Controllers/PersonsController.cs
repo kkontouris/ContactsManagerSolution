@@ -132,19 +132,26 @@ namespace _16CrudExample.Controllers
 			{
 				return RedirectToAction("Index");
 			}
-			if(ModelState.IsValid)
+			if (!ModelState.IsValid)
 			{
-				PersonResponse updatedPerson=await _personUpdaterService.UpdatePerson(personUpdateRequest);
-				return RedirectToAction("Index");
-			}
-			else
-			{
-				List<CountryResponse> allCountries =await _countriesService.GetAllCountries();
+				List<CountryResponse> allCountries = await _countriesService.GetAllCountries();
 				ViewBag.Countries = allCountries;
 				ViewBag.errors = ModelState.Values.SelectMany(v => v.Errors).SelectMany(v => v.ErrorMessage).ToList();
 				return View(personResponse.ToPersonUpdateRequest());
+
 			}
+		
+					var person = new Person(personUpdateRequest.PersonName, personUpdateRequest.Email, personUpdateRequest.DateOfBirth,
+						personUpdateRequest.Gender.ToString(), personUpdateRequest.CountryId, personUpdateRequest.Address, personUpdateRequest.ReceiveNewsLetters,
+						personUpdateRequest.TaxIdentificationNumber);
+
+					await _personUpdaterService.UpdatePerson(personUpdateRequest);
+					return RedirectToAction("Index");
+
 		}
+				
+			
+		
 
 		[HttpGet]
 		[Route("[action]/{PersonId}")]

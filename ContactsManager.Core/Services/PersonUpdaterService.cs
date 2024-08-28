@@ -47,10 +47,12 @@ namespace Services
 			//update all details
 			matchingPerson.PersonName = personUpdateRequest.PersonName;
 			matchingPerson.Address = personUpdateRequest.Address;
+			matchingPerson.Email = personUpdateRequest.Email;
 			matchingPerson.Gender = personUpdateRequest.Gender.ToString();
 			matchingPerson.CountryId = personUpdateRequest.CountryId;
 			matchingPerson.DateOfBirth= personUpdateRequest.DateOfBirth;
 			matchingPerson.ReceiveNewsLeters = personUpdateRequest.ReceiveNewsLetters;
+			matchingPerson.TaxIdentificationNumber = personUpdateRequest.TaxIdentificationNumber;
 
 			await _personsRepository.UpdatePerson(matchingPerson);
 

@@ -46,9 +46,11 @@ namespace ServiceContracts.Dto
 				Gender == personResponse.Gender &&
 				TaxIdentificationNumber == personResponse.TaxIdentificationNumber;
 		}
-
+		
 		public PersonUpdateRequest ToPersonUpdateRequest()
 		{
+			GenderOptions genderEnum;
+			bool isParsed = Enum.TryParse<GenderOptions>(Gender, true, out genderEnum);
 			return new PersonUpdateRequest()
 			{
 				PersonId = PersonId,
@@ -56,7 +58,7 @@ namespace ServiceContracts.Dto
 				Email = Email,
 				DateOfBirth = DateOfBirth,
 				Address = Address,
-				Gender = (GenderOptions)Enum.Parse(typeof(GenderOptions), Gender, true),
+				Gender = isParsed ? genderEnum:GenderOptions.Default,
 				CountryId = CountryId,
 				ReceiveNewsLetters = ReceiveNewsLetters,
 				TaxIdentificationNumber=TaxIdentificationNumber

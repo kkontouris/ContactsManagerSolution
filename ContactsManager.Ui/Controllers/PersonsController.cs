@@ -141,12 +141,12 @@ namespace _16CrudExample.Controllers
 
 			}
 		
-					var person = new Person(personUpdateRequest.PersonName, personUpdateRequest.Email, personUpdateRequest.DateOfBirth,
-						personUpdateRequest.Gender.ToString(), personUpdateRequest.CountryId, personUpdateRequest.Address, personUpdateRequest.ReceiveNewsLetters,
-						personUpdateRequest.TaxIdentificationNumber);
+			var person = new Person(personUpdateRequest.PersonName, personUpdateRequest.Email, personUpdateRequest.DateOfBirth,
+				personUpdateRequest.Gender.ToString(), personUpdateRequest.CountryId, personUpdateRequest.Address, personUpdateRequest.ReceiveNewsLetters,
+				personUpdateRequest.TaxIdentificationNumber);
 
-					await _personUpdaterService.UpdatePerson(personUpdateRequest);
-					return RedirectToAction("Index");
+				await _personUpdaterService.UpdatePerson(personUpdateRequest);
+				return RedirectToAction("Index");
 
 		}
 				

@@ -10,6 +10,7 @@ namespace ServiceContracts.Enums
 	{
 		Male, 
 		Female, 
-		Other
+		Other,
+		Default
 	}
 }

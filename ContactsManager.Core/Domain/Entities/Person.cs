@@ -60,8 +60,12 @@ namespace Entities
 				throw new ArgumentException("Ο ΑΦΜ πρέπει να έχει ακριβώς 9 χαρακτήρες.");
 			}
 
-			// Εφόσον τα validations περάσουν, αποθηκεύουμε τις τιμές
-			PersonId = Guid.NewGuid();  // Αυτόματη δημιουργία νέου Guid για το PersonId
+			// Έλεγχος για το PersonId
+			if (PersonId == Guid.Empty)
+			{
+				PersonId = Guid.NewGuid();  // Δημιουργία νέου Guid μόνο αν το PersonId είναι κενό
+			}
+
 			PersonName = personName;
 			Email = email;
 			DateOfBirth = dateOfBirth;

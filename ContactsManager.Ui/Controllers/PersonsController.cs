@@ -54,7 +54,7 @@ namespace _16CrudExample.Controllers
 				{nameof(PersonResponse.Gender), "Gender" },
 				{nameof(PersonResponse.Address), "Address" },
 				{nameof(PersonResponse.Email), "Email" },
-				{nameof(PersonResponse.DateOfBirth), "Date Of Birth" },
+				{nameof(PersonResponse.TaxIdentificationNumber), "Tax Identification Number" },
 				{nameof(PersonResponse.Country), "Country" }
 			};
 			//search

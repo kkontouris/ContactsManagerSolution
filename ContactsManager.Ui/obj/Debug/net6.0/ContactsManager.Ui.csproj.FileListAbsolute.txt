@@ -265,3 +265,4 @@ D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Ui\
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Ui\obj\Debug\net6.0\ContactsManager.Ui.sourcelink.json
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Ui\bin\Debug\net6.0\appsettings.Development.json
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Ui\bin\Debug\net6.0\appsettings.json
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Ui\bin\Debug\net6.0\DinkToPdf.dll

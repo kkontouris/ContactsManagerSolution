@@ -67,17 +67,17 @@ namespace Services
 					temp.Email.Contains(searchString)),
 
 
-				nameof (PersonResponse.DateOfBirth) =>
+				nameof (PersonResponse.TaxIdentificationNumber) =>
 					await _personsRepository.GetFilteredPersons(temp =>
-					temp.DateOfBirth.Value.ToString("dd MMMM yyyy").Contains(searchString)),
+					temp.TaxIdentificationNumber.Contains(searchString)),
 
 				nameof (PersonResponse.Gender) =>
 					await _personsRepository.GetFilteredPersons(temp =>
 					temp.Gender.Contains(searchString)),
 
-				nameof(PersonResponse.CountryId) =>
+				nameof(PersonResponse.Country) =>
 				 await _personsRepository.GetFilteredPersons(temp =>
-				 temp.Country.CountryName.Contains(searchString)),
+				 temp.Country!=null &&temp.Country.CountryName!=null&&temp.Country.CountryName.Contains(searchString)),
 
 				nameof (PersonResponse.Address) =>
 					await _personsRepository.GetFilteredPersons(temp =>

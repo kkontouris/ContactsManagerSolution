@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "S9l6GV/FRJR9Gj7/BMs61iut119CYpzKFNnmG4zCu3IZmpQ9sXh2mTYp+VAXjcAZbKBxNVovwppfssgudlw0iw==",
+  "dgSpecHash": "pZ4DLQhGUVU0CqZuMquw8sL32FwV533PflJY5Uk9AMWNkLPyKv2b9KthRe70+uif9B4pAS637DZ7qJ81u09RWw==",
   "success": true,
   "projectFilePath": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\ContactsManager.Ui.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kwstas\\.nuget\\packages\\csvhelper\\28.0.1\\csvhelper.28.0.1.nupkg.sha512",
+    "C:\\Users\\kwstas\\.nuget\\packages\\dinktopdf\\1.0.8\\dinktopdf.1.0.8.nupkg.sha512",
     "C:\\Users\\kwstas\\.nuget\\packages\\epplus\\6.0.8\\epplus.6.0.8.nupkg.sha512",
     "C:\\Users\\kwstas\\.nuget\\packages\\epplus.interfaces\\6.0.0\\epplus.interfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\kwstas\\.nuget\\packages\\epplus.system.drawing\\6.0.0\\epplus.system.drawing.6.0.0.nupkg.sha512",
@@ -279,6 +280,7 @@
     "C:\\Users\\kwstas\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\kwstas\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\kwstas\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\kwstas\\.nuget\\packages\\system.threading.thread\\4.0.0\\system.threading.thread.4.0.0.nupkg.sha512",
     "C:\\Users\\kwstas\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\kwstas\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\kwstas\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",

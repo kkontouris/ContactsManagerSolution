@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\Rotativa\\wkhtmltopdf.exe",
-      "PackagePath": "staticwebassets\\Rotativa\\wkhtmltopdf.exe"
-    },
-    {
       "Id": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\StyleSheet.css",
       "PackagePath": "staticwebassets\\StyleSheet.css"
     },

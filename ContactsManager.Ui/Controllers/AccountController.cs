@@ -44,52 +44,40 @@ namespace ContactsManager.Ui.Controllers
 				return View(registerDTO);
 			}
             //if no errors
-            //Storing the users registyration details into identity database
+            //Storing the users registration details into identity database
             ApplicationUser user = new ApplicationUser()
 			{
 				Email= registerDTO.Email,
 				PhoneNumber=registerDTO.Phone,
-				PersonName=registerDTO.PersonName,
+				ApplicationUserName=registerDTO.PersonName,
 				UserName=registerDTO.Email
 			};
 			IdentityResult result=await _userManager.CreateAsync(user, registerDTO.Password);
 			if (result.Succeeded)
 			{
-				if(registerDTO.userType==Core.Enums.UserTypeOptions.Admin)
+				if (await _roleManager.FindByNameAsync(UserTypeOptions.User.ToString()) is null)
 				{
-					//create admin role
-					if(await _roleManager.FindByNameAsync(UserTypeOptions.Admin.ToString()) is null)
+
+					ApplicationRole applicationRole = new ApplicationRole()
 					{
-						ApplicationRole applicationRole = new ApplicationRole()
-						{
-							Name = UserTypeOptions.Admin.ToString()
-						};
-						await _roleManager.CreateAsync(applicationRole);
-					}
-
-
-					//add the new user into admin role
-					await _userManager.AddToRoleAsync(user, UserTypeOptions.Admin.ToString());
-
+						Name = UserTypeOptions.Admin.ToString()
+					};
+					await _roleManager.CreateAsync(applicationRole);
 				}
-				else
-				{
-                    if (await _roleManager.FindByNameAsync(UserTypeOptions.User.ToString()) is null)
-                    {
-                        ApplicationRole applicationRole = new ApplicationRole()
-                        {
-                            Name = UserTypeOptions.User.ToString()
-                        };
-                        await _roleManager.CreateAsync(applicationRole);
-                    }
 
-                    await _userManager.AddToRoleAsync(user, UserTypeOptions.User.ToString());
-                }
+
+				//add the new user into admin role
+				await _userManager.AddToRoleAsync(user, UserTypeOptions.User.ToString());
+
+
+				await _userManager.AddToRoleAsync(user, UserTypeOptions.User.ToString());
+
 				//To Do: Sign In
 				await _signInManager.SignInAsync(user, isPersistent: false);
-                //ActionName, ControllerName
-                return RedirectToAction(nameof(PersonsController.Index), "Persons");
-            }
+				//ActionName, ControllerName
+				return RedirectToAction(nameof(PersonsController.Index), "Persons");
+			}
+        
 			else
 			{
 				foreach(IdentityError error in  result.Errors)
@@ -98,7 +86,7 @@ namespace ContactsManager.Ui.Controllers
 				}
 				return View(registerDTO);
 			};	
-		}
+	}
 		[HttpGet]
         [Authorize("NotAuthorized")]
         public IActionResult Login()

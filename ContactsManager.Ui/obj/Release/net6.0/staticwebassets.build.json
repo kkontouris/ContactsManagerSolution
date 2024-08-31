@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dMB4jiiDELKm61vRC4+wwt0ZzDjTu4gGzDo4pYXxSVI=",
+  "Hash": "CGquvTyN8NP/10p2Dkxk0RIgXeD79vyezvFp67pkgpU=",
   "Source": "ContactsManager.Ui",
   "BasePath": "_content/ContactsManager.Ui",
   "Mode": "Default",
@@ -112,6 +112,25 @@
       "OriginalItemSpec": "wwwroot\\jquery.validate.unobtrusive.min.js"
     },
     {
+      "Identity": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\lib\\libwkhtmltox.dll",
+      "SourceId": "ContactsManager.Ui",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\",
+      "BasePath": "_content/ContactsManager.Ui",
+      "RelativePath": "lib/libwkhtmltox.dll",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\libwkhtmltox.dll"
+    },
+    {
       "Identity": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\logo.png",
       "SourceId": "ContactsManager.Ui",
       "SourceType": "Discovered",
@@ -129,25 +148,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\logo.png"
-    },
-    {
-      "Identity": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\Rotativa\\wkhtmltopdf.exe",
-      "SourceId": "ContactsManager.Ui",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\",
-      "BasePath": "_content/ContactsManager.Ui",
-      "RelativePath": "Rotativa/wkhtmltopdf.exe",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Rotativa\\wkhtmltopdf.exe"
     },
     {
       "Identity": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\StyleSheet.css",

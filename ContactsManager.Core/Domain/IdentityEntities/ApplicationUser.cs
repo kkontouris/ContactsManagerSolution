@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Entities;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace ContactsManager.Core.Domain.IdentityEntities
 {
 	public class ApplicationUser: IdentityUser<Guid>
 	{
-        public string? PersonName { get; set; }
+        public string? ApplicationUserName { get; set; }
+        
     }
 }

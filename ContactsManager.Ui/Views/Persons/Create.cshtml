@@ -11,7 +11,7 @@
 		@*Person Name*@     @*label for="" and input id="" is the same *@
 		<div class="form-field flex">
 			<div class="w-25">
-				<label asp-for="PersonName" class="form-label pt">Person Name</label>
+				<label asp-for="PersonName" class="form-label pt">Person Name*</label>
 			</div>
 			<div class="flex-1">
 				<input type="text" asp-for="PersonName" class="form-input" />
@@ -22,7 +22,7 @@
 		@*Email*@     @*label for="" and input id="" is the same *@
 		<div class="form-field flex">
 			<div class="w-25">
-				<label asp-for="Email" class="form-label">Email</label>
+				<label asp-for="Email" class="form-label">Email*</label>
 			</div>
 			<div class="flex-1">
 				<input asp-for="Email" class="form-input" />
@@ -59,12 +59,12 @@
 		@* @* @* @*Country*@     @*label for="" and input id="" is the same *@
 		<div class="form-field flex">
 			<div class="w-25">
-				<label class="form-label" asp-for="CountryId">Country</label>
+				<label class="form-label" asp-for="CountryId">Country*</label>
 			</div>
 			<div class="flex-1">
 				<select asp-for="CountryId" class="form-input">
 					<option value="">Select a Country</option>
-					@foreach (var country in ViewBag.Countries as List<CountryResponse>)
+					@foreach (var country in (ViewBag.Countries as List<CountryResponse>).OrderBy(c => c.CountryName))
 					{
 						<option value="@country.CountryId">@country.CountryName</option>
 					}

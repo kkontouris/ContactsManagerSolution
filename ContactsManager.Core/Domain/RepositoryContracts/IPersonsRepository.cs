@@ -57,5 +57,8 @@ namespace RepositoryContracts
 		/// <param name="person">person object to update</param>
 		/// <returns>the updated person object</returns>
 		Task<Person> UpdatePerson(Person person);
-	}
+
+		 Task<List<Person>> GetPersonsByUserId(string userId);
+
+    }
 }

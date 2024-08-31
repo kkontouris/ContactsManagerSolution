@@ -1,5 +1,7 @@
 ﻿using _16CrudExample.Filters.ActionFilters;
 using ContactsManager.Core.Domain.IdentityEntities;
+using DinkToPdf.Contracts;
+using DinkToPdf;
 using Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -39,9 +41,9 @@ namespace _16CrudExample.StartupExtensions
 
             services.AddTransient<PersonsListActionFilter>();
 
+			services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
 
-
-            services.AddDbContext<ApplicationDbContext>(options => { options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")); });
+			services.AddDbContext<ApplicationDbContext>(options => { options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")); });
 
             //Enable Identity in this project
             services.AddIdentity<ApplicationUser, ApplicationRole>(options=>

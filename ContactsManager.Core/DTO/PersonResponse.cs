@@ -24,7 +24,9 @@ namespace ServiceContracts.Dto
 
 		public double? Age { get; set; }
 
-		public override bool Equals(object? obj)
+        public Guid UserId { get; set; }
+
+        public override bool Equals(object? obj)
 		{
 			if(obj == null)
 			{
@@ -44,8 +46,9 @@ namespace ServiceContracts.Dto
 				Address == personResponse.Address &&
 				ReceiveNewsLetters == personResponse.ReceiveNewsLetters &&
 				Gender == personResponse.Gender &&
-				TaxIdentificationNumber == personResponse.TaxIdentificationNumber;
-		}
+				TaxIdentificationNumber == personResponse.TaxIdentificationNumber&&
+				UserId == personResponse.UserId;
+        }
 		
 		public PersonUpdateRequest ToPersonUpdateRequest()
 		{
@@ -58,12 +61,13 @@ namespace ServiceContracts.Dto
 				Email = Email,
 				DateOfBirth = DateOfBirth,
 				Address = Address,
-				Gender = isParsed ? genderEnum:GenderOptions.Default,
+				Gender = isParsed ? genderEnum : GenderOptions.Default,
 				CountryId = CountryId,
 				ReceiveNewsLetters = ReceiveNewsLetters,
-				TaxIdentificationNumber=TaxIdentificationNumber
+				TaxIdentificationNumber = TaxIdentificationNumber,
 				
-			};
+
+            };
 		}
 	}
 
@@ -84,7 +88,8 @@ namespace ServiceContracts.Dto
 				Age = (person.DateOfBirth != null) ? Math.Round((DateTime.Now - person.DateOfBirth.Value).TotalDays / 365.25):null,
 				Country=person.Country?.CountryName,
 				TaxIdentificationNumber=person.TaxIdentificationNumber,
-			};
+                UserId = person.UserId
+            };
 			
 		}
 	}

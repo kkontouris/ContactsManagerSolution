@@ -54,9 +54,13 @@ namespace Services
 		}
 
 
-		public async Task<List<PersonResponse>> GetFilteredPersons(string searchBy, string? searchString)
+		public async Task<List<PersonResponse>> GetFilteredPersons(string userId,string searchBy, string? searchString)
 		{
-			List<Person> persons = searchBy switch
+
+            // Φιλτράρισμα των εγγραφών του συγκεκριμένου χρήστη
+            List<Person> persons = await _personsRepository.GetPersonsByUserId(userId);
+            //List<Person> persons = await _personsRepository.GetPersonsByUserId(userId);
+            persons = searchBy switch
 			{
 				nameof(PersonResponse.PersonName) =>
 					await _personsRepository.GetFilteredPersons(temp =>
@@ -83,8 +87,8 @@ namespace Services
 					await _personsRepository.GetFilteredPersons(temp =>
 					temp.Address.Contains(searchString)),
 
-				_ =>await _personsRepository.GetAllPersons()
-			};
+                _ => persons // Επιστρέφουμε τη λίστα των ατόμων χωρίς περαιτέρω φίλτρα
+            };
 			return persons.Select(temp => temp.ToPersonResponse()).ToList();
 		}
 

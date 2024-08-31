@@ -265,3 +265,4 @@ D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Ui\
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Ui\obj\Release\net6.0\ContactsManager.Ui.pdb
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Ui\obj\Release\net6.0\ContactsManager.Ui.genruntimeconfig.cache
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Ui\obj\Release\net6.0\ref\ContactsManager.Ui.dll
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Ui\bin\Release\net6.0\DinkToPdf.dll

@@ -7,6 +7,7 @@ D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Ui\
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Ui\obj\Release\net6.0\PubTmp\Out\ContactsManager.Ui.runtimeconfig.json
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Ui\obj\Release\net6.0\PubTmp\Out\ContactsManager.Ui.pdb
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Ui\obj\Release\net6.0\PubTmp\Out\CsvHelper.dll
+D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Ui\obj\Release\net6.0\PubTmp\Out\DinkToPdf.dll
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Ui\obj\Release\net6.0\PubTmp\Out\EPPlus.dll
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Ui\obj\Release\net6.0\PubTmp\Out\EPPlus.Interfaces.dll
 D:\προγραμματισμός\c#\ContactsManagerSolution\ContactsManager.Ui\obj\Release\net6.0\PubTmp\Out\EPPlus.System.Drawing.dll

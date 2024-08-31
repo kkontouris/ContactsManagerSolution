@@ -38,12 +38,14 @@ namespace ServiceContracts.Dto
 		public bool ReceiveNewsLetters { get; set; }
 
 
+        public Guid UserId { get; set; }
 
-		/// <summary>
-		/// Converts the current object of PersonAddRequest into a new
-		/// Object of Person Type for the Domain Model
-		/// </summary>
-		/// <returns></returns>
+
+        /// <summary>
+        /// Converts the current object of PersonAddRequest into a new
+        /// Object of Person Type for the Domain Model
+        /// </summary>
+        /// <returns></returns>
         public Person ToPerson()
 		{
 			return new Person (
@@ -54,7 +56,8 @@ namespace ServiceContracts.Dto
 				countryId: CountryId,
 				address: Address,
 				receiveNewsLeters: ReceiveNewsLetters,
-				taxIdentificationNumber: TaxIdentificationNumber
+				taxIdentificationNumber: TaxIdentificationNumber,
+				userId:UserId
 			);
 
 		}

@@ -32,11 +32,19 @@ namespace Repositories
 		public async Task<bool> DeletePersonWithPersonIdAsync(Guid personId, CancellationToken token)
 		{
 			try {
-				_dB.Persons.RemoveRange(_dB.Persons.Where(temp => temp.PersonId == personId));
-				int rowsDeleted = await _dB.SaveChangesAsync(token);
+                var person = await _dB.Persons.SingleOrDefaultAsync(p => p.PersonId == personId, token);
+				if (person != null)
+				{
+					_dB.Persons.Remove(person);
+                    int rowsDeleted = await _dB.SaveChangesAsync(token);
 
-				return rowsDeleted > 0;
-			}
+                    // Επιστροφή true αν διαγράφηκε τουλάχιστον μία γραμμή
+                    return rowsDeleted > 0;
+
+
+                }
+				return false;
+            }
 			catch (OperationCanceledException)
 			{
 				// Ακύρωση λειτουργίας
@@ -71,8 +79,17 @@ namespace Repositories
 				.FirstOrDefaultAsync();
 		}
 
+        public async Task<List<Person>> GetPersonsByUserId(string userId)
+        {
+            // Μετατροπή του string σε Guid
+            Guid userGuid = Guid.Parse(userId);
+            return await _dB.Persons.Include("Country")
+                .Where(p => p.UserId == userGuid)
+                .ToListAsync();
+        }
 
-		public async Task<Person> UpdatePerson(Person person)
+
+        public async Task<Person> UpdatePerson(Person person)
 		{
 			Person? matchingPerson = await _dB.Persons.FirstOrDefaultAsync(temp => temp.PersonId == person.PersonId);
 

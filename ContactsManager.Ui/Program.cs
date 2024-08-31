@@ -48,7 +48,6 @@ namespace _16CrudExample
 
 
 			app.UseHealthChecks("/healthcheck");
-			Rotativa.AspNetCore.RotativaConfiguration.Setup("wwwroot", wkhtmltopdfRelativePath: "Rotativa");
 			app.UseStaticFiles();
 
 			app.UseRouting();             //Identifying action method based route

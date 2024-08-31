@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ContactsManager.Core.Domain.IdentityEntities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -23,12 +24,20 @@ namespace Entities
 		public string? TaxIdentificationNumber { get; set; }
 
 		[ForeignKey("CountryId")]
-		public Country? Country { get; internal set; }
+		public Country? Country { get; set; }
+
+        // Foreign Key for User
+        [Required]
+        public Guid UserId { get; set; }
 
 
-		// Constructor με validation
-		public Person(string? personName, string? email, DateTime? dateOfBirth, string? gender, Guid? countryId,
-					  string? address, bool receiveNewsLeters, string? taxIdentificationNumber)
+        [ForeignKey("UserId")]
+        public ApplicationUser? ApplicationUser { get; set; }
+
+        // Constructor με validation
+        public Person(string? personName, string? email, DateTime? dateOfBirth, string? gender, Guid? countryId,
+					  string? address, bool receiveNewsLeters, string? taxIdentificationNumber,
+					  Guid userId)
 		{
 			// Validation για PersonName
 			if (string.IsNullOrWhiteSpace(personName) || personName.Length > 40)
@@ -74,6 +83,7 @@ namespace Entities
 			Address = address;
 			ReceiveNewsLeters = receiveNewsLeters;
 			TaxIdentificationNumber = taxIdentificationNumber;
-		}
+            UserId = userId; 
+        }
 	}
 }

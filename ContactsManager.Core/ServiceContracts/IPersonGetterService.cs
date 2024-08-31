@@ -28,7 +28,7 @@ namespace ServiceContracts
 		/// <param name="searchBy">search field to search</param>
 		/// <param name="searchString">search string to search</param>
 		/// <returns>List of Person objects</returns>
-		public Task<List<PersonResponse>> GetFilteredPersons(string searchBy, string? searchString);
+		public Task<List<PersonResponse>> GetFilteredPersons(string userId,string searchBy, string? searchString);
 
 
 

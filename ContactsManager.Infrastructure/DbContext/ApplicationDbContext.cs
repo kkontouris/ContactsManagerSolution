@@ -17,13 +17,10 @@ namespace Entities
 
 		public ApplicationDbContext(DbContextOptions options) : base(options)
 		{
-			this.Database.Migrate();
+			//this.Database.Migrate();
 		}
 
-		// Constructor that accepts DbContextOptions and passes them to the base class
-		//public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
-		//{
-		//}
+
 		public virtual DbSet<Country> Countries { get; set; }
 		public virtual DbSet<Person> Persons { get; set; }
 
@@ -34,8 +31,11 @@ namespace Entities
 			modelBuilder.Entity<Country>().ToTable("Countries");
 			modelBuilder.Entity<Person>().ToTable("Persons");
 
-			//Seed To Countries
-			string countriesJson = File.ReadAllText("countries.json");
+           
+
+
+            //Seed To Countries
+            string countriesJson = File.ReadAllText("countries.json");
 			List<Country>? countries=System.Text.Json.JsonSerializer.Deserialize<List<Country>>(countriesJson);
 			foreach(Country country in countries)
 			{
@@ -75,10 +75,11 @@ namespace Entities
 				new SqlParameter("@Gender", person.Gender),
 				new SqlParameter("@Address", person.Address),
 				new SqlParameter("@ReceiveNewsLeters", person.ReceiveNewsLeters),
-				new SqlParameter("@TaxIdentificationNumber", person.TaxIdentificationNumber)
+				new SqlParameter("@TaxIdentificationNumber", person.TaxIdentificationNumber),
+				new SqlParameter("@UserId", person.UserId)
 			};
 			return Database.ExecuteSqlRaw("EXECUTE [dbo].[InsertPerson] @PersonId,@PersonName, @Email,@DateOfBirth" +
-				"@Gender,@Address,@ReceiveNewsLeters,@TaxIdentificationNumber",parameters);
+				"@Gender,@Address,@ReceiveNewsLeters,@TaxIdentificationNumber, @UserId",parameters);
 		}
 	}
 }

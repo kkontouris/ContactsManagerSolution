@@ -59,6 +59,9 @@ namespace ContactsManager.Infrastructure.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<string>("ApplicationUserName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
@@ -85,9 +88,6 @@ namespace ContactsManager.Infrastructure.Migrations
                         .HasColumnType("nvarchar(256)");
 
                     b.Property<string>("PasswordHash")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PersonName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
@@ -351,9 +351,14 @@ namespace ContactsManager.Infrastructure.Migrations
                         .HasColumnType("varchar(9)")
                         .HasColumnName("TaxIdentificationNumber");
 
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("PersonId");
 
                     b.HasIndex("CountryId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Persons", (string)null);
 
@@ -370,7 +375,8 @@ namespace ContactsManager.Infrastructure.Migrations
                             Gender = "Female",
                             PersonName = "Marguerite Example",
                             ReceiveNewsLeters = false,
-                            TaxIdentificationNumber = "156950492"
+                            TaxIdentificationNumber = "156950492",
+                            UserId = new Guid("00000000-0000-0000-0000-000000000000")
                         },
                         new
                         {
@@ -382,7 +388,8 @@ namespace ContactsManager.Infrastructure.Migrations
                             Gender = "Female",
                             PersonName = "Ursa Example",
                             ReceiveNewsLeters = false,
-                            TaxIdentificationNumber = "156950491"
+                            TaxIdentificationNumber = "156950491",
+                            UserId = new Guid("00000000-0000-0000-0000-000000000000")
                         });
                 });
 
@@ -494,6 +501,14 @@ namespace ContactsManager.Infrastructure.Migrations
                     b.HasOne("Entities.Country", "Country")
                         .WithMany("Persons")
                         .HasForeignKey("CountryId");
+
+                    b.HasOne("ContactsManager.Core.Domain.IdentityEntities.ApplicationUser", "ApplicationUser")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ApplicationUser");
 
                     b.Navigation("Country");
                 });

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CGquvTyN8NP/10p2Dkxk0RIgXeD79vyezvFp67pkgpU=",
+  "Hash": "H+9WPpJKSjAK71MZyds0oY2JihIM39dFsvvH3hmvsL0=",
   "Source": "ContactsManager.Ui",
   "BasePath": "_content/ContactsManager.Ui",
   "Mode": "Default",
@@ -110,25 +110,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\jquery.validate.unobtrusive.min.js"
-    },
-    {
-      "Identity": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\lib\\libwkhtmltox.dll",
-      "SourceId": "ContactsManager.Ui",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\",
-      "BasePath": "_content/ContactsManager.Ui",
-      "RelativePath": "lib/libwkhtmltox.dll",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\libwkhtmltox.dll"
     },
     {
       "Identity": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\logo.png",

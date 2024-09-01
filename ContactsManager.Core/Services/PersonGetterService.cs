@@ -63,28 +63,28 @@ namespace Services
             persons = searchBy switch
 			{
 				nameof(PersonResponse.PersonName) =>
-					await _personsRepository.GetFilteredPersons(temp =>
+					await _personsRepository.GetFilteredPersons(userId,temp =>
 					 temp.PersonName.Contains(searchString)),
 
 				nameof (PersonResponse.Email) =>
-					await _personsRepository.GetFilteredPersons(temp =>
+					await _personsRepository.GetFilteredPersons(userId,temp =>
 					temp.Email.Contains(searchString)),
 
 
 				nameof (PersonResponse.TaxIdentificationNumber) =>
-					await _personsRepository.GetFilteredPersons(temp =>
+					await _personsRepository.GetFilteredPersons(userId,temp =>
 					temp.TaxIdentificationNumber.Contains(searchString)),
 
 				nameof (PersonResponse.Gender) =>
-					await _personsRepository.GetFilteredPersons(temp =>
+					await _personsRepository.GetFilteredPersons(userId,temp =>
 					temp.Gender.Contains(searchString)),
 
 				nameof(PersonResponse.Country) =>
-				 await _personsRepository.GetFilteredPersons(temp =>
+				 await _personsRepository.GetFilteredPersons(userId,temp =>
 				 temp.Country!=null &&temp.Country.CountryName!=null&&temp.Country.CountryName.Contains(searchString)),
 
 				nameof (PersonResponse.Address) =>
-					await _personsRepository.GetFilteredPersons(temp =>
+					await _personsRepository.GetFilteredPersons(userId,temp =>
 					temp.Address.Contains(searchString)),
 
                 _ => persons // Επιστρέφουμε τη λίστα των ατόμων χωρίς περαιτέρω φίλτρα

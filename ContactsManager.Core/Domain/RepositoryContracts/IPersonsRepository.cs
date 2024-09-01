@@ -41,7 +41,7 @@ namespace RepositoryContracts
 		/// </summary>
 		/// <param name="predicate">LINQ expression to check</param>
 		/// <returns>list of person objects who match with the given condition</returns>
-		Task<List<Person>> GetFilteredPersons(Expression<Func<Person, bool>> predicate);
+		Task<List<Person>> GetFilteredPersons(string userId, Expression<Func<Person, bool>> predicate);
 
 
 		/// <summary>

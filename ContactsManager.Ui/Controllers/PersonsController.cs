@@ -67,6 +67,7 @@ namespace _16CrudExample.Controllers
 			_logger.LogDebug($"searchby:{searchBy}, searchstring:{searchString}, sortBy:{sortBy}");
 
             var userId = _userManager.GetUserId(User); // Λήψη του ID του συνδεδεμένου χρήστη
+			Guid userIdGuid = Guid.Parse(userId);
 
             ViewBag.SearchFields = new Dictionary<string, string>()
 
@@ -82,8 +83,10 @@ namespace _16CrudExample.Controllers
 			ViewBag.CurrentSearchBy = searchBy;
 			ViewBag.CurrentSearchString = searchString;
 
-			//sort 
-			List<PersonResponse> sortedPersons = await _personSorterService.GetSortedPersons(allPersons, sortBy, sortOrder);
+            //sort 
+            // Φιλτράρισμα των εγγραφών μόνο για τον τρέχοντα χρήστη
+            List<PersonResponse> userPersons = allPersons.Where(p => p.UserId == userIdGuid).ToList();
+            List<PersonResponse> sortedPersons = await _personSorterService.GetSortedPersons(userPersons, sortBy, sortOrder);
 			ViewBag.CurrentSortBy = sortBy;
 			ViewBag.CurrentSortOrder = sortOrder.ToString();
 

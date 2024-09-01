@@ -25,10 +25,6 @@
       "PackagePath": "staticwebassets\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\lib\\libwkhtmltox.dll",
-      "PackagePath": "staticwebassets\\lib\\libwkhtmltox.dll"
-    },
-    {
       "Id": "D:\\προγραμματισμός\\c#\\ContactsManagerSolution\\ContactsManager.Ui\\wwwroot\\logo.png",
       "PackagePath": "staticwebassets\\logo.png"
     },
